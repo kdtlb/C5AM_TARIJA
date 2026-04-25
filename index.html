@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C5AM | STAY HARD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        accent: '#DC2626', // Brutal Blood Red
+                        dark: '#09090b', // Zinc 950
+                        darker: '#000000', // Pitch Black
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-400 { animation-delay: 0.4s; }
+        /* Gritty noise overlay */
+        .noise-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body class="bg-darker text-gray-300 font-sans antialiased selection:bg-accent selection:text-white uppercase tracking-wide">
+
+    <header class="relative h-screen flex items-center justify-center overflow-hidden border-b border-zinc-900">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" 
+                 alt="Gritty workout" 
+                 class="w-full h-full object-cover opacity-20 grayscale">
+            <div class="absolute inset-0 bg-gradient-to-b from-darker/80 via-darker/90 to-darker"></div>
+        </div>
+        <div class="noise-bg"></div>
+        
+        <nav class="absolute top-0 w-full p-6 z-20 flex justify-between items-center max-w-7xl mx-auto left-0 right-0">
+            <div class="text-3xl font-black tracking-tighter text-white">C5<span class="text-accent">AM</span></div>
+        </nav>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in-up">
+            <p class="text-accent font-bold tracking-[0.3em] mb-4 text-sm md:text-base">Nadie va a venir a salvarte</p>
+            <h1 class="text-6xl md:text-8xl font-black text-white mb-6 tracking-tighter">CREA CALLO <br><span class="text-accent">MENTAL</span></h1>
+            <p class="text-lg md:text-xl text-zinc-500 mb-10 font-bold max-w-2xl mx-auto tracking-widest">El dolor es la única forma de crecer. 5:00 AM. Cero excusas.</p>
+            <a href="#aplicar" class="inline-block bg-accent text-white font-black py-4 px-12 rounded-none transition-all transform hover:scale-105 hover:bg-red-700 tracking-[0.2em] border-2 border-accent hover:border-red-700">
+                ENTRA AL INFIERNO
+            </a>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 bg-darker relative">
+        <div class="noise-bg"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-20 fade-in-up">
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-4 tracking-tighter">EL FILTRO</h2>
+                <div class="h-1 w-24 bg-accent mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24 fade-in-up delay-200">
+                <div class="order-2 md:order-1 border-l-4 border-accent pl-8">
+                    <span class="text-zinc-600 font-black tracking-[0.2em] text-sm block mb-2">01 // LA VOZ DÉBIL</span>
+                    <h3 class="text-3xl font-black text-white mb-4 tracking-tight">TU MENTE TE MIENTE.</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed font-bold tracking-wide">Cuando suena la alarma, tu cerebro buscará la comodidad. Te dirá que descanses, que te lo mereces. Es la voz de la debilidad. Mátala inmediatamente. Levántate.</p>
+                </div>
+                <div class="order-1 md:order-2 overflow-hidden relative group grayscale hover:grayscale-0 transition duration-700">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1000&auto=format&fit=crop" alt="Oscuridad" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-700 border border-zinc-800">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24 fade-in-up delay-200">
+                <div class="overflow-hidden relative group grayscale hover:grayscale-0 transition duration-700">
+                    <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1000&auto=format&fit=crop" alt="Esfuerzo" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-700 border border-zinc-800">
+                </div>
+                <div class="border-l-4 border-zinc-800 pl-8">
+                    <span class="text-zinc-600 font-black tracking-[0.2em] text-sm block mb-2">02 // EL SUFRIMIENTO</span>
+                    <h3 class="text-3xl font-black text-white mb-4 tracking-tight">ABRAZA EL DOLOR.</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed font-bold tracking-wide">No se supone que sea divertido. Se supone que debe destruirte para que puedas reconstruirte. Si no duele, no estás cambiando. Haz lo que odias hacer.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center fade-in-up delay-400">
+                <div class="order-2 md:order-1 border-l-4 border-accent pl-8">
+                    <span class="text-zinc-600 font-black tracking-[0.2em] text-sm block mb-2">03 // EL RESULTADO</span>
+                    <h3 class="text-3xl font-black text-white mb-4 tracking-tight">QUIÉN VA A CARGAR LOS BOTES?</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed font-bold tracking-wide">Mientras el mundo busca atajos, tú buscas la fricción. Te conviertes en el salvaje de la habitación. No hay talento aquí, solo una obsesión enfermiza con no ser del montón.</p>
+                </div>
+                <div class="order-1 md:order-2 overflow-hidden relative group grayscale hover:grayscale-0 transition duration-700">
+                    <img src="https://images.unsplash.com/photo-1526506114634-1110037a307a?q=80&w=1000&auto=format&fit=crop" alt="Resistencia" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-700 border border-zinc-800">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-accent text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-5xl md:text-7xl font-black mb-2 tracking-tighter">0%</p>
+                    <p class="font-black tracking-[0.2em] text-xs text-black">TALENTO</p>
+                </div>
+                <div>
+                    <p class="text-5xl md:text-7xl font-black mb-2 tracking-tighter">100%</p>
+                    <p class="font-black tracking-[0.2em] text-xs text-black">ESFUERZO</p>
+                </div>
+                <div>
+                    <p class="text-5xl md:text-7xl font-black mb-2 tracking-tighter">365</p>
+                    <p class="font-black tracking-[0.2em] text-xs text-black">DÍAS SIN FALLAR</p>
+                </div>
+                <div>
+                    <p class="text-5xl md:text-7xl font-black mb-2 tracking-tighter">&infin;</p>
+                    <p class="font-black tracking-[0.2em] text-xs text-black">ALMAS ROBADAS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aplicar" class="py-24 px-6 bg-dark">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-4 tracking-tighter">NO ESTÁS LISTO.</h2>
+                <p class="text-zinc-500 text-sm font-bold tracking-widest">Pruébanos lo contrario.</p>
+            </div>
+            
+            <form class="bg-darker p-8 border border-zinc-900 relative">
+                <div class="absolute top-0 left-0 w-full h-1 bg-accent"></div>
+                
+                <div class="mb-8">
+                    <label class="block text-xs font-black tracking-[0.2em] text-zinc-500 mb-3" for="name">IDENTIFICACIÓN</label>
+                    <input class="w-full bg-dark text-white border-b-2 border-zinc-800 px-0 py-3 focus:outline-none focus:border-accent transition rounded-none font-bold placeholder-zinc-700" type="text" id="name" required placeholder="TU NOMBRE">
+                </div>
+                
+                <div class="mb-8">
+                    <label class="block text-xs font-black tracking-[0.2em] text-zinc-500 mb-3" for="email">COMUNICACIÓN</label>
+                    <input class="w-full bg-dark text-white border-b-2 border-zinc-800 px-0 py-3 focus:outline-none focus:border-accent transition rounded-none font-bold placeholder-zinc-700" type="email" id="email" required placeholder="CORREO ELECTRÓNICO">
+                </div>
+
+                <div class="mb-12">
+                    <label class="block text-xs font-black tracking-[0.2em] text-zinc-500 mb-3" for="excuse">TU MAYOR DEBILIDAD</label>
+                    <textarea class="w-full bg-dark text-white border-b-2 border-zinc-800 px-0 py-3 focus:outline-none focus:border-accent transition rounded-none font-bold placeholder-zinc-700 resize-none" id="excuse" rows="3" required placeholder="¿QUÉ EXCUSA USAS PARA NO LEVANTARTE?"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-white text-black font-black text-xl py-5 transition-all transform hover:bg-accent hover:text-white tracking-[0.2em]">
+                    ACEPTAR EL DOLOR
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-darker py-12 text-center border-t border-zinc-900">
+        <div class="text-2xl font-black tracking-tighter text-zinc-800 mb-4">STAY<span class="text-accent">HARD</span></div>
+        <p class="text-zinc-700 text-xs tracking-widest font-bold">MÁTATE TRABAJANDO O MUERE INTENTÁNDOLO.</p>
+    </footer>
+
+</body>
+</html>
